@@ -51,7 +51,7 @@ ${menu.serch}
 
 👋 *POWERD BY SL_PANCHA_MD WHATSAPP BOT* ✅
 `
-await conn.sendMessage(from,{text:madeMenu},{quoted:mek})
+await conn.sendMessage(from,{image:{url:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrzKnIhLO5SjLoUg8dGxYxiE7OdqL65l_nXQ&s"},caption:madeMenu},{quoted:mek})
 
 
 
