@@ -21,11 +21,11 @@ search:''
 
 for (let i = 0; i < commands.length; i++) {
 if (commands[i].pattern && !commands[i].dontAddCommandList) {
-menu[commands[i].category] += `${config.PREFIX}${commands[i].pattern}\n`;
+menu[commands[i].category] += `.${config.PREFIX}${commands[i].pattern}\n`;
  }
 }
 
-let madeMenu = `☠*Hello ${pushname}*💖
+let madeMenu = `☠️ *Hello ${pushname}* 💖
 > *DOWNLOAD COMMANDS* 😈
 
 ${menu.download}
@@ -38,7 +38,7 @@ ${menu.main}
 
 ${menu.group}
 
-> *OWNER COMMANDS* 🐱‍👤
+> *OWNER COMMANDS* ☠️
 
 ${menu.owner}
 
@@ -46,9 +46,9 @@ ${menu.owner}
 
 ${menu.convert}
 
-> *SERCH COMMANDS* ⭐
+> *SEARCH COMMANDS* ⭐
 
-${menu.serch}
+${menu.search}
 
 👋 *POWERD BY SL_PANCHA_MD WHATSAPP BOT* ✅
 `
@@ -57,4 +57,4 @@ await conn.sendMessage(from,{image:{url:config.ALIVE_IMG},caption:madeMenu},{quo
 }catch(e){
 console.log(e)
 reply(`${e}`)
-};
+}
